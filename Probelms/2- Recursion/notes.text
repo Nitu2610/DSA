@@ -1,0 +1,20 @@
+Recursion- when a funciton call's itself until a specific condition is met. 
+when a funciton call's itself- a function-A  inside another function B.
+
+In Call Stack the flow is First In Last Out.
+
+Example:- 
+let sum = 0;
+function A() {
+  sum++;
+  console.log(sum);
+  if (sum == 10) {  // specific conition is checked
+    return;
+  }
+  return A(); // fn is called
+}
+
+A();
+
+
+Recursion Tree- A flow chart to better understand the recursion process. 
