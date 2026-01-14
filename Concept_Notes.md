@@ -1,22 +1,102 @@
-📌 Pattern Problems (Star Patterns)
-
-All pattern problems use nested loops.
-
-Outer loop → controls the number of lines (rows).
-
-Inner loop → controls the number of columns and is usually related to the row number.
-
-Print "*" (or required symbol) inside the inner loop.
-
-Always observe symmetry in the pattern.
 
 
-🔁 Recursion
+###📌 Pattern Problems (Star Patterns)
 
-Recursion: When a function calls itself until a base condition is met.
+*All pattern problems use nested loops.
 
-The function keeps calling itself and stops when the base condition is satisfied.
+*Outer loop → controls the number of lines (rows).
 
-In the call stack, execution follows FILO (First In, Last Out).
+*Inner loop → controls the number of columns and is usually related to the row number.
 
-A Recursion Tree is a diagram used to visualize recursive calls.
+*Print "*" (or required symbol) inside the inner loop.
+
+*Always observe symmetry in the pattern.
+
+
+### 🔁 Recursion
+
+*Recursion: When a function calls itself until a base condition is met.
+
+*The function keeps calling itself and stops when the base condition is satisfied.
+
+*In the call stack, execution follows FILO (First In, Last Out).
+
+*A Recursion Tree is a diagram used to visualize recursive calls.
+
+let sum = 0;
+
+function A() {
+  sum++;
+  console.log(sum);
+  if (sum == 10) {   // base condition
+    return;
+  }
+  return A();       // recursive call
+}
+
+A();
+
+🧮 Hashing
+
+Hashing is a technique to pre-store data (usually frequencies) so it can be fetched in O(1) time.
+
+We first precompute and store values, then use them directly when needed.
+
+📦 Array-Based Hashing (Frequency Array)
+Idea:
+
+Given an array:
+
+[1, 1, 2, 3, 3]
+
+Steps:
+
+Create a fixed-size array initialized with 0 (size depends on max value).
+
+Traverse the original array and do:
+
+freq[arr[i]]++
+
+
+Now freq[x] gives the count of number x in O(1) time.
+
+Example Result:
+freq[1] = 2
+freq[2] = 1
+freq[3] = 2
+
+🗺️ Array Hashing vs Map Hashing
+
+Array-based hashing:
+You manually convert key → number (e.g., 'a'→0, 'b'→1) and store like arr[2] = 5.
+
+Map / Hash Table:
+You directly do map["c"] = 5 and the structure automatically hashes the key internally.
+
+Core Idea:
+
+With arrays you design the address, with hash tables the system finds the address.
+
+⏱️ Time & Space Complexity of Hashing
+
+Best case: O(1)
+
+Average case: O(1)
+
+Worst case: O(N) (due to collisions)
+
+Space complexity: O(N)
+
+Hashing is O(1) on average, but can degrade to O(N) in the worst case if many keys collide.
+
+⚙️ Common Hashing Methods
+
+Division method
+
+Folding method
+
+Mid-square method
+
+✅ Interview One-Liner
+
+Hashing stores precomputed values to allow O(1) average-time lookup, but can degrade to O(N) in worst case due to collisions.
