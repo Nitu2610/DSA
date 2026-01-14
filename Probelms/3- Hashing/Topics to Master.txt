@@ -1,0 +1,3 @@
+Topic:
+
+.has() and .get() of map. .had() return true or false, .get() return the value.
