@@ -1,6 +1,16 @@
-// Merge Sort-> Divide the array in appx 2 each parts until the array lenght is 2 to compare and then merge in sorted order.
+// Merge Sort
+// Idea:
+    // Divide the array into two halves recursively until each subarray has size 1.
+    // Then merge (conquer) the subarrays back in sorted order.
 
-// If the base case or condition - tells whens to stop the recursion fn(mergeSort). is missed, you will land in to error- " RangeError: Maximum call stack size exceeded "
+// Divide:
+    // Division is done using recursion.
+    // A base case is required to stop recursion, otherwise stack overflow will occur.
+    // If the base case or condition - tells whens to stop the recursion fn(mergeSort). is missed, you will land in to error- " RangeError: Maximum call stack size exceeded "
+
+// Conquer (Merge):
+    // Compare elements from both arrays and place the smaller one into a temp array.
+    // Continue until both arrays are merged in sorted order.
 
 // Time Complexity (TC): O(N log N) in all cases (Best, Average, Worst). This is because we always split in half and always merge.
 // Space Complexity (SC): O(N). Unlike our previous sorts, Merge Sort needs that temp array to store elements, making it less memory-efficient than Quick Sort.
