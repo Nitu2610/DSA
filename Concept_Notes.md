@@ -2,7 +2,7 @@
 #   DSA Notes
 
 
-### 📌 Pattern Problems
+### 1. 📌 Pattern Problems
 
 * All pattern problems use nested loops.
 * Outer loop → controls the number of lines (rows).
@@ -11,7 +11,7 @@
 * Always observe symmetry in the pattern.
 
 
-### 🔁 Recursion
+### 2. 🔁 Recursion
 
 * Recursion: When a function calls itself until a base condition is met.
 * The function keeps calling itself and stops when the base condition is satisfied.
@@ -31,7 +31,7 @@
 
             A();
 
-### 🧮 Hashing
+### 3. 🧮 Hashing
 
 * Hashing is a technique to pre-store data (usually frequencies) so it can be fetched in O(1) time.
 * We first precompute and store values, then use them directly when needed.
@@ -75,4 +75,38 @@ Given an array: [1, 1, 2, 3, 3]
 Hashing stores precomputed values to allow O(1) average-time lookup, but can degrade to O(N) in worst case due to collisions.
 
 
-### 
+### 4.  Sorting Algorithms
+#### Classification
+
+##### Simple Sorts (O(N^2))
+##### 1. Selection Sort
+- Idea: Pick smallest from unsorted, put in front
+- Time: O(N^2) (best/avg/worst)
+- Space: O(1)
+- Stable: No
+- Use: When memory writes are expensive
+
+
+#####  2. Bubble Sort
+- Idea: Swap adjacent if wrong; largest goes to end
+- Time: O(N^2), Best: O(N) if optimized
+- Space: O(1)
+- Stable: Yes
+- Use: Rarely used
+
+
+##### 3. Insertion Sort
+- Idea: Insert element into correct position in sorted part
+- Time: Best O(N), Avg/Worst O(N^2)
+- Space: O(1)
+- Stable: Yes
+- Use: Small or nearly sorted arrays (used in TimSort)
+
+##### Efficient Sorts (O(N log N))
+- Merge Sort
+- Quick Sort (avg)
+- Heap Sort
+- TimSort (Java, Python)
+
+
+
