@@ -6,7 +6,6 @@
 // let arr = [1, 2, 3]; // [6, 2, 3, 5, 4, 1];
 // // console.log(`Before- `, arr);
 // for (let i = 1; i < arr.length; i++) {
-//   let didSwap = false;
 //   for (let j = i; j > 0; j--) {
 //     if (arr[j] < arr[j - 1]) {
 //       let temp = arr[j];
@@ -14,6 +13,9 @@
 //       arr[j - 1] = temp;
 //       console.log(arr);
 //     }
+// else{
+//     break;
+// }
 //   }
 
 //   // let j=i;
@@ -25,11 +27,10 @@
 //   //     console.log(arr)
 //   // }
 
-//   if (!didSwap) {
-//     console.log(`The given array- ${arr} is already sorted.!!`);
-//     break;
-//   }
 
 //   console.log("---------");
 // }
+
+
+
 
