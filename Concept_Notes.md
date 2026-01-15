@@ -2,7 +2,7 @@
 #   DSA Notes
 
 
-### 📌 Pattern Problems (Star Patterns)
+### 📌 Pattern Problems
 
 * All pattern problems use nested loops.
 * Outer loop → controls the number of lines (rows).
@@ -74,3 +74,5 @@ Given an array: [1, 1, 2, 3, 3]
 ###### ✅ Interview One-Liner
 Hashing stores precomputed values to allow O(1) average-time lookup, but can degrade to O(N) in worst case due to collisions.
 
+
+### 
