@@ -9,7 +9,7 @@ const functionCorrectEle = (arr, low, high) => {
     i = low,
     j = high;
 
-  while (i < j) {
+  while (i < j) { // this condition is to ensure the i never crosses j , so after the loop ends only j crosses i and its index value is capture. 
     while (arr[i] <= pivot && i <= high - 1) {
       i++;
     }
@@ -21,7 +21,6 @@ const functionCorrectEle = (arr, low, high) => {
     }
   }
 
-  
   [arr[low], arr[j]] = [arr[j], arr[low]];
   return j;
 };
