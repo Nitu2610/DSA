@@ -1,43 +1,30 @@
 let arr = [1, 2, 0, 6, 5, 8, 9, 7, 3, 4];
 
-const  merge=(arr, low, mid, high)=>{
-  let temp=[], left=low, right=mid+1;
+const quick=(arr, low=0,high)=>{
+  let pivot=arr[low],i=low, j=high;
 
-  while(left<=mid && right <=high){
-    if(arr[left]<=arr[right]){
-      temp.push(arr[left]);
-      left++
-    } else {
-        temp.push(arr[right]);
-      right++
+  while(i<j){
+    while(arr[i]<=pivot && i<= high-1){
+      i++;
+    }
+       while(arr[j]>pivot && i>= low+1){
+      j--;
+    }
+    if(i<j){
+      [arr[i],arr[j]]=  [arr[j],arr[i]]
     }
   }
-  while(left<=mid){
-     temp.push(arr[left]);
-      left++
-  }
-    while(right<=high){
-     temp.push(arr[right]);
-      right++
-  }
-
-  for(let i=0;i<temp.length;  i++){
-    arr[low+i]= temp[i]
-  }
-
+   [arr[low],arr[j]]=  [arr[j],arr[low]];
+   return j;
 }
 
-const mergeSort=(arr,low=0,high=arr.length-1)=>{
-
-  if(low>= high) return;
-
-  let mid= Math.floor((low+high)/2);
-
-  mergeSort(arr,low, mid);
-  mergeSort(arr,mid+1, high);
-
-  merge(arr, low, mid, high)
+const quickSort=(arr, low=0,high=arr.length-1)=>{
+  if(low<high){
+    const piovetIndex=quick(arr, low,high);
+    quickSort(arr, low, piovetIndex-1);
+    quickSort(arr, piovetIndex+1,high)
+  }
 }
 
-mergeSort(arr);
+quickSort(arr);
 console.log(arr)
