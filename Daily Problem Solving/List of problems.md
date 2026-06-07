@@ -13,4 +13,25 @@
     4. Two Sum
     5. Reverse String
 --------------------------------
--
+- #### 6th June
+    1. **Problems Solved (Concept-Based)**
+       - Function execution with call() and this binding
+       - Passing arguments using call()
+       - Difference between call() vs apply()
+       - Handling this with call(null) (global object / undefined behavior)
+       - Losing this in function reference assignment
+       - Method borrowing using call()
+       - Argument handling when call() / apply() is missing params
+       - Understanding non-permanent nature of call() / apply()
+       - Rebinding this using multiple call() executions
+       - Return behavior of call() (important trap)
+    2.  **bind() Concepts Covered**
+       - bind() returning a new function
+       - Permanent this binding using bind()
+       - Function execution after bind()
+       - bind() overriding attempts using call()
+       - Partial application (pre-filling arguments using bind())
+       - Argument combination (pre-filled + runtime args)
+       - bind() vs call() execution difference
+       - this permanence in bound functions
+-------------------------------------------------
