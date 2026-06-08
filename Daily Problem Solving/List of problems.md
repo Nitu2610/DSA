@@ -35,3 +35,20 @@
        - bind() vs call() execution difference
        - this permanence in bound functions
 -------------------------------------------------
+- #### 8th June
+     - Instance ↔ Prototype Link
+     - Prototype Property Lookup
+     - Own Property Overrides Prototype
+     - Property Not Found Anywhere
+     - Two Objects, One Prototype
+     - Delete Own Property
+     - in vs hasOwnProperty
+     - Built-in toString
+     - Override toString
+     - Inheritance
+     - hasOwnProperty During Inheritance
+     - in During Inheritance
+     - Child Method Location
+     - Parent Method Lookup
+     - Child Overrides Parent
+     -----------------------------------------
