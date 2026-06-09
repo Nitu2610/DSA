@@ -52,3 +52,10 @@
      - Parent Method Lookup
      - Child Overrides Parent
      -----------------------------------------
+- #### 9th June
+    - Problem 1: Callback
+    - Problem 2: Basic Promise
+    - Problem 3: Basic Promise Chaining
+    - Problem 4: User Creation Flow
+    - Problem 5: Order Processing Flow
+-------------------------------------
