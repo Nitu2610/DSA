@@ -59,3 +59,18 @@
     - Problem 4: User Creation Flow
     - Problem 5: Order Processing Flow
 -------------------------------------
+- #### 10th June
+    1. Callbacks (Introduction)
+    2. Promises
+    3. Promise Chaining
+    4. Error Handling with Promises
+    5. Promise API
+    6. Promisification
+    7. Microtasks
+    8. Async/Await
+    9. Generators
+    10. Advanced Iteration with Generators
+    11. Async Iteration and Generators
+    12. Modules (Introduction)
+    13. Export and Import
+    14. Dynamic Imports
