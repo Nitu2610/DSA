@@ -1,7 +1,0 @@
-{
-  "code-runner.executorMap": {
-    "javascript": "node readInput.js"
-  },
-  "code-runner.runInTerminal": true,
-  "code-runner.saveFileBeforeRun": true
-}
