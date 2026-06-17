@@ -1,39 +1,20 @@
-let arr = [5, 9, 7, 4, 1, 2, 3, 0, 8];
+ let arr = [ 9, 7, 4, 1, 2, 3, 0, 8, 5];
 
-const merge = (arr, low, mid, high) => {
-  let temp = [],left = low, right = mid + 1;
+// let arr=[ 0, 1, 2, 3, 4, 5, 7, 8, 9]
 
-  while (left <= mid && right <= high) {
-    if (arr[left] <= arr[right]) {
-      temp.push(arr[left]);
-      left++;
-    } else {
-      temp.push(arr[right]);
-      right++;
+console.log(arr);
+
+for (let i = 0; i < arr.length - 1; i++) {
+  let minIndex = i; 
+  let flag=false;
+
+  for (let j = i; j < arr.length; j++) {
+    if (arr[j] < arr[minIndex]) {
+      minIndex = j;
+      flag=true;
     }
   }
-  while (left <= mid) {
-    temp.push(arr[left]);
-    left++;
-  }
-  while (right <= high) {
-    temp.push(arr[right]);
-    right++;
-  }
-  for (let i = 0; i < temp.length; i++) {
-    arr[low + i] = temp[i];
-  }
-};
+  (!flag) ?  console.log("Given Array is already sorted.") :  [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+}
 
-const mergeSort = (arr, low = 0, high = arr.length - 1) => {
-  if (low >= high) return;
-
-  let mid = Math.floor((low + high) / 2);
-  mergeSort(arr, low, mid);
-  mergeSort(arr, mid + 1, high);
-  merge(arr, low, mid, high);
-};
-
-mergeSort(arr);
-
-console.log(arr)
+console.log(arr);
