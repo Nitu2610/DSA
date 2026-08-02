@@ -1,20 +1,22 @@
- let arr = [ 9, 7, 4, 1, 2, 3, 0, 8, 5];
+let arr = [9, 7, 4, 1, 2, 3, 0, 8, 5];
 
-// let arr=[ 0, 1, 2, 3, 4, 5, 7, 8, 9]
-
-console.log(arr);
-
-for (let i = 0; i < arr.length - 1; i++) {
-  let minIndex = i; 
-  let flag=false;
-
-  for (let j = i; j < arr.length; j++) {
-    if (arr[j] < arr[minIndex]) {
-      minIndex = j;
-      flag=true;
+for (let i = 0; i < arr.length-1; i++) {
+  let min = i;
+  for (let j = i+1; j < arr.length; j++) {
+    if (arr[j] < arr[min]) {
+      min = j;
     }
   }
-  (!flag) ?  console.log("Given Array is already sorted.") :  [arr[i], arr[minIndex]] = [arr[minIndex], arr[i]];
+  [arr[min], arr[i]] = [arr[i], arr[min]];
 }
+
+// Insertion--
+// for(let i=1; i<arr.length;i++){
+//   for(let j=i; j>=0; j--){
+//     if( arr[j]< arr[j-1] ){
+//       [ arr[j-1] , arr[j] ] = [ arr[j], arr[j-1] ]
+//     }
+//   }
+// }
 
 console.log(arr);
