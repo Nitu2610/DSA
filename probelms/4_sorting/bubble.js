@@ -22,7 +22,6 @@
 //   console.log(`After ${arr.length - i} iteration.  ---------------`);
 // }
 
-
 // Optimised method;
 
 // for (let i = arr.length - 1; i >= 1; i--) {
