@@ -8,3 +8,4 @@ for (let i = 1; i < arr.length; i++) {
 console.log(max);
 
 // TC=> O(n) & SC=> O(1)
+       
